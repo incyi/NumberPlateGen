@@ -1,34 +1,26 @@
-name: CI
+name: Python Application CI
 
-on:
-  push:
-    branches:
-      - main  # Change this to your default branch if it's not 'main'
-      - tests
-  pull_request:
-    branches:
-      - main  # Run on pull requests targeting the 'main' branch
+on: [push, pull_request]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'  # Specify the Python version you want to use
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
 
-      - name: Install dependencies
-        run: |
-          python -m venv .venv
-          .venv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Run tests
-        run: |
-          .venv/bin/activate
-          python -m unittest discover -s tests
+    - name: Install dependencies in virtual environment
+      run: |
+        python -m venv .venv
+        .venv/bin/python -m pip install --upgrade pip
+        .venv/bin/python -m pip install -r requirements.txt
+        
