@@ -1,4 +1,10 @@
-from ..utils import random_letters, random_digits  # Updated import
+"""This module provides the UK (The United Kingdom) number plate formats.
+
+It includes functions for generating various UK number plate patterns.
+"""
+
+import random  # Standard library import
+from ..utils import random_letters, random_digits  # Local import
 
 # https://www.gov.uk/displaying-number-plates
 

@@ -1,4 +1,10 @@
-from ..utils import random_letters, random_digits  # Updated import
+"""This module provides the US (The United States of America) number plate formats.
+
+It includes functions for generating various US number plate patterns.
+"""
+
+import random  # Standard library import
+from ..utils import random_letters, random_digits  # Local import
 
 def us_plate_format():
     """Generates a random US license plate."""
