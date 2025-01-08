@@ -1,5 +1,10 @@
 name: Pylint
 
+# Define the permissions for this workflow
+permissions:
+  contents: read  # Read access to the repository contents
+  pull-requests: write  # Write access for pull requests
+
 on: [push]
 
 jobs:
