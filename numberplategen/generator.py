@@ -13,6 +13,7 @@ Functions:
 
 import random
 from .formats import supported_formats
+from .utils import random_letters, random_digits
 
 def generate_number_plate(region):
     """
@@ -30,14 +31,6 @@ def generate_number_plate(region):
 
     # Generate the number plate using the format function
     return format_function()
-
-def random_letters(length):
-    """Generates a string of random uppercase letters."""
-    return ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ', k=length))
-
-def random_digits(length):
-    """Generates a string of random digits."""
-    return ''.join(random.choices('0123456789', k=length))
 
 def nl_plate_format():
     """Generates a random NL number plate."""

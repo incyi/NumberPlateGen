@@ -3,7 +3,7 @@
 It includes functions for generating various UK number plate patterns.
 """
 
-from ..generator import random_letters, random_digits  # Local import
+from ..utils import random_letters, random_digits  # Local import
 
 # https://www.gov.uk/displaying-number-plates
 
