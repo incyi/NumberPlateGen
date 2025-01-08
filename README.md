@@ -1,6 +1,8 @@
 # NumberPlateGen
 
 [![CI](https://github.com/incyi/NumberPlateGen/actions/workflows/ci.yml/badge.svg)](https://github.com/incyi/NumberPlateGen/actions/workflows/ci.yml)
+[![Pylint](https://github.com/incyi/NumberPlateGen/actions/workflows/pylint.yml/badge.svg)](https://github.com/incyi/NumberPlateGen/actions/workflows/pylint.yml)
+
 
 **NumberPlateGen** is a Python application designed to generate random car number plates from various regions around the world. Currently, it supports Dutch (NL) number plates, with plans to extend support for other regions in the future.
 
