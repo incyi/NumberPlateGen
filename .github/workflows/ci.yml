@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # Change this to your default branch if it's not 'main'
+      - tests
   pull_request:
     branches:
       - main  # Run on pull requests targeting the 'main' branch
