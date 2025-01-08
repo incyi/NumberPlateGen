@@ -11,9 +11,7 @@ Functions:
 - nl_plate_format(): Generates a random NL number plate.
 """
 
-import random
 from .formats import supported_formats
-from .utils import random_letters, random_digits
 
 def generate_number_plate(region):
     """
@@ -24,22 +22,10 @@ def generate_number_plate(region):
     :raises ValueError: If the region is not supported.
     """
     if region not in supported_formats:
-        raise ValueError(f"Region '{region}' not supported. Please choose from {list(supported_formats.keys())}.")
+        raise ValueError(f"Region '{region}' not supported. Use: {list(supported_formats.keys())}.")
 
     # Get the plate format function for the specified region
     format_function = supported_formats[region]
 
     # Generate the number plate using the format function
     return format_function()
-
-def nl_plate_format():
-    """Generates a random NL number plate."""
-    formats = [
-        f"{random_digits(2)}-{random_letters(2)}-{random_letters(2)}",  # 99-XX-XX
-        f"{random_digits(2)}-{random_letters(3)}-{random_digits(1)}",  # 99-XXX-9
-        f"{random_digits(1)}-{random_letters(3)}-{random_digits(2)}",  # 9-XXX-99
-        f"{random_letters(2)}-{random_digits(3)}-{random_letters(1)}",  # XX-999-X
-        f"{random_digits(1)}-{random_digits(3)}-{random_letters(2)}",  # X-999-XX
-        f"{random_letters(3)}-{random_digits(2)}-{random_letters(1)}"  # XXX-99-X
-    ]
-    return random.choice(formats)

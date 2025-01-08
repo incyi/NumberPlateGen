@@ -1,4 +1,12 @@
 # numberplategen/utils.py
+
+"""
+Utilities for generating random letters and digits.
+
+This module contains functions for generating random uppercase letters
+and digits, which are used for creating number plate formats.
+"""
+
 import random
 
 def random_letters(length):
