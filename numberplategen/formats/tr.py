@@ -3,7 +3,6 @@
 It includes functions for generating various TR number plate patterns.
 """
 
-import random  # Standard library import
 from ..utils import random_letters, random_digits  # Local import
 
 def tr_plate_format():

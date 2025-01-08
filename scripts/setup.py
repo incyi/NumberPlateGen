@@ -1,4 +1,12 @@
+"""Setup script for the NumberPlateGen project.
+
+This script defines the installation configuration for the project.
+"""
+
 from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
     name="NumberPlateGen",
@@ -15,11 +23,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',  # Specify the minimum Python version
-    install_requires=[
-        "pytest",  # For testing
-        "flask",   # For future web API (if needed)
-    ],
+    python_requires='>=3.8',  # Specify the minimum Python version
     entry_points={
         'console_scripts': [
             'numberplategen=cli:main',  # Command line interface entry point

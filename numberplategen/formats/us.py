@@ -3,7 +3,6 @@
 It includes functions for generating various US number plate patterns.
 """
 
-import random  # Standard library import
 from ..utils import random_letters, random_digits  # Local import
 
 def us_plate_format():

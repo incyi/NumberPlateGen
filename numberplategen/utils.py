@@ -1,13 +1,33 @@
+"""Utility functions for generating random letters and digits.
+
+This module provides helper functions to generate random strings of letters
+and digits, which are used across various number plate generation formats.
+
+Functions:
+- random_letters(length): Generates a string of random uppercase letters.
+- random_digits(length): Generates a string of random digits.
+"""
+
 import random
 
-def random_string(length, chars):
-    """Generates a random string of a specified length from given characters."""
-    return ''.join(random.choice(chars) for _ in range(length))
+def random_letters(length):
+    """Generates a string of random uppercase letters.
+
+    Args:
+        length (int): The number of letters to generate.
+
+    Returns:
+        str: A string of random uppercase letters.
+    """
+    return ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ', k=length))
 
 def random_digits(length):
-    """Generates a random string of digits of a specified length."""
-    return random_string(length, '0123456789')
+    """Generates a string of random digits.
 
-def random_letters(length):
-    """Generates a random string of uppercase letters of a specified length."""
-    return random_string(length, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+    Args:
+        length (int): The number of digits to generate.
+
+    Returns:
+        str: A string of random digits.
+    """
+    return ''.join(random.choices('0123456789', k=length))

@@ -9,9 +9,10 @@ import re
 from numberplategen.formats.nl import nl_plate_format
 
 class TestNumberPlateGen(unittest.TestCase):
+    """Unit tests for the number plate generator."""
 
     def test_nl_plate_format(self):
-        # Generate a number of sample plates to test
+        """Test the NL number plate format generation."""
         for _ in range(100):
             plate = nl_plate_format()
             # Print the plate for debugging
