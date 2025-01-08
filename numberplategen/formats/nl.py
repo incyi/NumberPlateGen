@@ -3,7 +3,7 @@
 It includes functions for generating various NL number plate patterns.
 """
 import random  # Standard library import
-from ..utils import random_letters, random_digits  # Local import
+from ..generator import random_letters, random_digits  # Local import
 
 # https://www.rdw.nl/particulier/voertuigen/auto/de-kentekenplaat/cijfers-en-letters-op-de-kentekenplaat
 # Ingangsdatum kentekenserie 	 Serie 	 Combinatie
