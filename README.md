@@ -1,5 +1,6 @@
 # NumberPlateGen
 
+[![CI](https://github.com/incyi/NumberPlateGen/actions/workflows/ci.yml/badge.svg)](https://github.com/incyi/NumberPlateGen/actions/workflows/ci.yml)
 [![Pylint](https://github.com/incyi/NumberPlateGen/actions/workflows/pylint.yml/badge.svg)](https://github.com/incyi/NumberPlateGen/actions/workflows/pylint.yml)
 
 
