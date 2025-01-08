@@ -1,3 +1,9 @@
+"""Unit tests for the NumberPlateGen package.
+
+This module contains test cases for validating the functionality
+of the number plate generation.
+"""
+
 import unittest
 import re
 from numberplategen.formats.nl import nl_plate_format
