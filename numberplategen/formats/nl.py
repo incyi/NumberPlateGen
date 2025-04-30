@@ -23,7 +23,7 @@ def nl_plate_format():
         f"{random_digits(2)}-{random_letters(3)}-{random_digits(1)}",  # 99-XXX-9
         f"{random_digits(1)}-{random_letters(3)}-{random_digits(2)}",  # 9-XXX-99
         f"{random_letters(2)}-{random_digits(3)}-{random_letters(1)}",  # XX-999-X
-        f"{random_digits(1)}-{random_digits(3)}-{random_letters(2)}",  # X-999-XX
+        f"{random_letters(1)}-{random_digits(3)}-{random_letters(2)}",  # X-999-XX
         f"{random_letters(3)}-{random_digits(2)}-{random_letters(1)}"  # XXX-99-X
     ]
 
