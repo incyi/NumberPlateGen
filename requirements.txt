@@ -6,4 +6,4 @@ mccabe==0.7.0
 platformdirs==4.4.0
 pylint==3.3.8
 setuptools==80.9.0
-tomlkit==0.13.2
+tomlkit==0.13.3
