@@ -21,7 +21,7 @@ def main():
         "-r", "--region",
         type=str,
         choices=supported_formats.keys(),
-        default="us",
+        default="nl",
         help="Specify the region format (e.g., 'nl', 'tr', 'us', 'uk'). Default is 'us'."
     )
     parser.add_argument(
