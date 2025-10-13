@@ -1,4 +1,4 @@
-astroid==3.3.11
+astroid==4.0.1
 colorama==0.4.6
 dill==0.4.0
 isort==6.1.0
