@@ -1,9 +1,9 @@
-astroid==4.1.0
+astroid==4.1.2
 colorama==0.4.6
 dill==0.4.1
-isort==7.0.0
+isort==8.0.1
 mccabe==0.7.0
 platformdirs==4.9.4
 pylint==4.0.5
-setuptools==82.0.1
+setuptools==83.0.0
 tomlkit==0.15.1
