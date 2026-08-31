@@ -3,7 +3,7 @@ colorama==0.4.6
 dill==0.4.1
 isort==8.0.1
 mccabe==0.7.0
-platformdirs==4.11.3
+platformdirs==4.11.5
 pylint==4.0.7
 setuptools==84.0.0
 tomlkit==0.15.1
